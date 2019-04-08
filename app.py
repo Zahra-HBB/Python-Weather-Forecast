@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 cityDict={}
-weatherInfo={"london": "25", "tehran":"30","melbourne":"20"}
+weatherInfo={"london": "25", "tehran":"30","melbourne":"20","paris":"22","sydney":"33","brisbane":"38"}
 
 
 @app.route("/",methods=['GET'])
@@ -44,8 +44,4 @@ def callWeatherApi (cityName):
         return None
 
 if __name__ == '__main__':
-    app.run()      
-
-
-
-
+    app.run()
