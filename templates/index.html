@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1> Enter the city name </h1>
+
+    <form action="/" method="POST">
+        <b>City Name:</b><br>
+        <input type="text" name="cityName" value=""><br>
+        <input type="submit" value="Weather Forecast">
+    </form>
+    <p><b> Current Weather in {{cityName}} is: </b>{{ weather }}</p>
+</body>
+
+</html>
