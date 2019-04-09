@@ -2,8 +2,8 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 cityDict={}
-weatherInfo={"london": "25", "tehran":"30","melbourne":"20","paris":"22","sydney":"33","brisbane":"38"}
-
+weatherInfo={"london": "25", "tehran":"30","melbourne":"20","paris":"22","sydney":"33","brisbane":"38","amsterdam":"9",
+            "ankara":"9","bangkok":"29","beijing":"6","boston":"6","san francisco":"16","seoul":"13"}
 
 @app.route("/",methods=['GET'])
 def getWeatherForecast():
